@@ -251,8 +251,8 @@ class PersonTest {
         persons.add(new Manager("Claire", 27, 52600));
         persons.add(new Customer("Felix", 52));
         assertDoesNotThrow(()->{
-           Main.customerSpeak(persons, "Felix", "Jeshiel");
-           Main.customerSpeak(persons, "Jewel", "Jea");
+            Main.customerSpeak(persons, "Felix", "Jeshiel");
+            Main.customerSpeak(persons, "Jewel", "Jea");
         });
 
         assertEquals(Main.customerSpeak(persons, "Felix", "Jeshiel"), "Oh, hello, Jeshiel. Can you assist me?");
@@ -307,4 +307,4 @@ class PersonTest {
             assertEquals(e.getMessage(), "Travis does not exist");
         }
     }
-}
+}}
